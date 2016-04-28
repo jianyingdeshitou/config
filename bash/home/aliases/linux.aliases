@@ -1,0 +1,5 @@
+alias ls='ls --color=auto -h'
+alias ll='ls -l'
+alias la='ll -a'
+
+alias vmstat='vmstat -w'
