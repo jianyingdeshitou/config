@@ -1,0 +1,10 @@
+alias dk='docker'
+
+alias dki='docker images'
+
+alias dkps='docker ps -a'
+
+alias dkrm='docker rm'
+alias dkrma='docker rm $(docker ps -qa)'
+
+alias dktagd='~/bin/tag-date.sh'
