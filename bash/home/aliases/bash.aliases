@@ -1,0 +1,7 @@
+alias df='df -h'
+alias du='du -h'
+
+alias rd='rm -rf'
+
+alias tgz='~/bin/tgz.sh'
+alias tgzx='tar -xvpzf'

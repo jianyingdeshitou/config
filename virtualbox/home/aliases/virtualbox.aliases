@@ -1,0 +1,31 @@
+alias vbm='VBoxManage'
+
+alias vminfo='vbm showvminfo'
+alias vmls='vbm list vms'
+alias vmps='vbm list runningvms'
+
+alias vmnew='vbm createvm'
+alias vmcl='~/bin/clonevm.sh'
+alias vmcl2='~/bin/clonevm2.sh'
+alias vmreg='vbm registervm'
+alias vmrm='vbm unregistervm --delete'
+
+alias vmctl='vbm controlvm'
+
+alias vmcfg='vbm modifyvm'
+alias vmcfg-aud='~/bin/modifyvm-audio.sh'
+alias vmcfg-usb='~/bin/modifyvm-usb.sh'
+alias vmcfg-mem='~/bin/modifyvm-mem.sh'
+alias vmcfg-br1='~/bin/modifyvm-nic1-bridged.sh'
+
+alias vmon='~/bin/startvm.sh'
+alias vmoff='~/bin/stopvm.sh'
+
+alias vmimp='vbm import'
+alias vmexp='~/bin/exportvm.sh'
+
+alias vmsnp-new='~/bin/snapshotvm-take.sh'
+alias vmsnp-load='~/bin/snapshotvm-restore.sh'
+alias vmsnp-rm='~/bin/snapshotvm-delete.sh'
+alias vmsnp-ls='~/bin/snapshotvm-list.sh'
+
