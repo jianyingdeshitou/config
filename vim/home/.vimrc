@@ -15,8 +15,10 @@ set expandtab
 set cursorline
 
 set encoding=utf-8
-set fileencodings=uft-8,gbk "使用utf-8或gbk打开文件
+set fileencodings=uft-8     "使用utf-8或gbk打开文件
+set fileformats=unix
 
 set hls                     "检索时高亮显示匹配项
+
 set foldmethod=syntax       "代码折叠
   
