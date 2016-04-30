@@ -38,13 +38,9 @@ alias gitfl-ff-now='gitfl-ff `date +%m%d`'
 
 alias gitfl-rs='gitfl release start'
 alias gitfl-rf='gitfl release finish'
-alias gitfl-rs-now='gitfl-rs `date +%m%d`'
-alias gitfl-rf-now='gitfl-rf `date +%m%d`'
 
 alias gitfl-hs='gitfl hotfix start'
 alias gitfl-hf='gitfl hotfix finish'
-alias gitfl-hs-now='gitfl-hs `date +%m%d`'
-alias gitfl-hf-now='gitfl-hf `date +%m%d`'
  
 alias gitlg='git log --graph --oneline --decorate --all'
 
