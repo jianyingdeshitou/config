@@ -6,6 +6,9 @@ alias gitcm='git commit'
 alias gitps='git push'
 alias gitpl='git pull'
 
+alias gitpsa='~/bin/git-push-all-tags.sh'
+alias gitpsao='gitpsa origin'
+
 alias gitpso='gitps origin'
 alias gitplo='gitpl origin'
 
@@ -33,6 +36,8 @@ alias gitfl-init='gitfl init'
 
 alias gitfl-fs='gitfl feature start'
 alias gitfl-ff='gitfl feature finish'
+alias gitfl-fs-now='gitfl-fs `date +%m%d`'
+alias gitfl-ff-now='gitfl-ff `date +%m%d`'
 
 alias gitfl-rs='gitfl release start'
 alias gitfl-rf='gitfl release finish'
