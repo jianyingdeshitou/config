@@ -1,7 +1,12 @@
+alias cmax='chmod +x'
+
 alias df='df -h'
 alias du='du -h'
+
+alias ffn='~/bin/find-filename-in-subdir.sh'
 
 alias rd='rm -rf'
 
 alias tgz='~/bin/tgz.sh'
 alias tgzx='tar -xvpzf'
+
