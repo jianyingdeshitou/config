@@ -1,6 +1,9 @@
+#!/bin/sh
 alias dk='docker'
 
 alias dki='docker images'
+
+alias dklg='dk logs'
 
 alias dkps='docker ps -a'
 

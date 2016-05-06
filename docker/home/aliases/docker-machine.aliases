@@ -1,0 +1,8 @@
+#!/bin/sh
+alias dm='docker-machine'
+
+alias dmenv='eval $(docker-machine env)'
+
+alias dmon='dm start && dmenv'
+alias dmoff='dm stop'
+
