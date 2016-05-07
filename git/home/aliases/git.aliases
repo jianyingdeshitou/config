@@ -1,0 +1,49 @@
+alias gitcl='git clone'
+
+alias gits='git status'
+alias gitaa='git add .'
+alias gitcm='git commit'
+alias gitps='git push'
+alias gitpl='git pull'
+
+alias gitpsa='~/bin/git-push-all-tags.sh'
+alias gitpsao='gitpsa origin'
+
+alias gitpso='gitps origin'
+alias gitplo='gitpl origin'
+
+alias gitpsom='gitpso master'
+alias gitplom='gitplo master'
+
+alias gitpsod='gitpso develop'
+alias gitplod='gitplo develop'
+
+alias gitcfg='git config --global'
+alias gitcfg-name='gitcfg user.name'
+alias gitcfg-email='gitcfg user.email'
+alias gitcfg-editor='gitcfg core.editor'
+alias gitcfg-crlf='~/bin/git-crlf.sh'
+alias gitcfg-utf8='~/bin/git-utf8.sh'
+
+alias gitrr='git remote rm'
+alias gitra='git remote add'
+alias gitrv='git remote -v'
+
+alias gitundo='~/bin/git-reset-clean.sh'
+
+alias gitfl='git flow'
+alias gitfl-init='gitfl init'
+
+alias gitfl-fs='gitfl feature start'
+alias gitfl-ff='gitfl feature finish'
+alias gitfl-fs-now='gitfl-fs `date +%m%d`'
+alias gitfl-ff-now='gitfl-ff `date +%m%d`'
+
+alias gitfl-rs='gitfl release start'
+alias gitfl-rf='gitfl release finish'
+
+alias gitfl-hs='gitfl hotfix start'
+alias gitfl-hf='gitfl hotfix finish'
+ 
+alias gitlg='git log --graph --oneline --decorate --all'
+
