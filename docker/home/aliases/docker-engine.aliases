@@ -13,3 +13,9 @@ alias dkrm='docker rm'
 alias dkrma='docker rm $(docker ps -qa)'
 
 alias dktagd='~/bin/tag-date.sh'
+
+alias dkv='dk volume'
+alias dkv-ls='dkv ls'
+alias dkv-rm='dkv rm'
+alias dkv-rma='dkv rm $(docker volume ls -qf dangling=true)'
+
