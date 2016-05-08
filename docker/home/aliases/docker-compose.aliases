@@ -1,0 +1,15 @@
+#!/bin/sh
+alias dcp='docker-compose'
+
+alias dcup='dcp up -d'
+alias dcdw='dcp down'
+
+alias dcon='dcp start'
+alias dcoff='dcp stop'
+
+alias dclg='dcp logs'
+
+alias dcps='dcp ps'
+
+alias dcrm='dcp rm'
+
