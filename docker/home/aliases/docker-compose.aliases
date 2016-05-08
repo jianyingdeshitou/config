@@ -1,0 +1,8 @@
+#!/bin/sh
+alias dcp='docker-compose'
+
+alias dcon='dcp up -d'
+alias dcoff='dcp down'
+
+alias dclg='dcp logs'
+
