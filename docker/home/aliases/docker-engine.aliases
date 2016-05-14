@@ -2,6 +2,7 @@
 alias dk='docker'
 
 alias dki='docker images'
+alias dkin='dki |grep none'
 alias dkrmi='docker rmi'
 
 alias dklg='dk logs'
