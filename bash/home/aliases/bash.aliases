@@ -1,5 +1,8 @@
 alias cmax='chmod +x'
 
+alias cpr='cp -R'
+alias cpa='cp -a'
+
 alias df='df -h'
 alias du='du -h'
 
