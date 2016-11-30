@@ -24,6 +24,7 @@ alias gitcfg-email='gitcfg user.email'
 alias gitcfg-editor='gitcfg core.editor'
 alias gitcfg-crlf='~/bin/git-crlf.sh'
 alias gitcfg-utf8='~/bin/git-utf8.sh'
+alias gitcfg-list='gitcfg -l'
 
 alias gitrr='git remote rm'
 alias gitra='git remote add'
