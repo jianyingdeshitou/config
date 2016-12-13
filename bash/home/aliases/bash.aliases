@@ -1,3 +1,5 @@
+alias c14='cut -b1-14'
+
 alias cmax='chmod +x'
 
 alias cpr='cp -R'
