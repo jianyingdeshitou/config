@@ -2,4 +2,6 @@ alias ls='ls --color=auto -h'
 alias ll='ls -l'
 alias la='ll -a'
 
+alias m14='~/bin/md5sum-file-cut14.sh'
+
 alias vmstat='vmstat -w'
