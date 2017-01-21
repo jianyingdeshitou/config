@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get autoremove --purge -y
-sudo apt-get autoclean
-sudo apt-get clean
+apt-get autoremove --purge -y
+apt-get autoclean
+apt-get clean
 dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P 
