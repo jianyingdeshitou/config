@@ -1,11 +1,11 @@
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 set nocp
 
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 " pathogen
 call pathogen#infect()
 
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 syntax on
 
 "colorscheme desert
@@ -16,30 +16,39 @@ filetype plugin indent on
 "filetype plugin on
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
-"--------------------------------------------------------
+" 设置当文件被改动时自动载入
+set autoread
+
+" 禁止生成临时文件
+set nobackup
+set noswapfile
+
+"------------------------------------------------------------------------------
 " 设置行号显示
 set nu
 
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 " 设置tab长度为4
 set tabstop=4
 set shiftwidth=4
 set expandtab
 
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 " 光标
+"------------------------------------------------------------------------------
 set cursorline
 " Highlight current line
 "au WinLeave * set nocursorline nocursorcolumn
 "au WinEnter * set cursorline cursorcolumn
 "set cursorline cursorcolumn
 
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 " 状态栏
 set laststatus=2
 
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 " airline
+"------------------------------------------------------------------------------
 
 " 设置主题
 "let g:airline_theme="luna"
@@ -56,7 +65,7 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 " let g:airline#extensions#whitespace#enabled = 0
 " let g:airline#extensions#whitespace#symbol = '!'
 
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 " 设置内部编码为utf8
 set encoding=utf-8
 " 当前编辑的文件编码
@@ -65,39 +74,84 @@ set fileencoding=utf8
 set fileencodings=uft8-bom,utf8,gbk,gb2312,big5
 set fileformats=unix,dos
 
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 " 检索时忽略大小写
 set ic
 " 检索时高亮显示匹配项
 set hls is
 
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 set foldmethod=indent
 "set foldmethod=syntax
 " 启动vim时不要自动折叠代码
 set foldlevel=100
 " 设置折叠栏宽度
-set foldcolumn=5
+set foldcolumn=0
 
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 " 键盘映射
+
+" F2 : 文件浏览器
+nmap <F2> :Lexplore<CR>
+" F3 : 切换缓冲区文件
+nmap <F3> :bn<CR>
+" F4 : 删除缓冲区文件
+nmap <F4> :bd<CR>
+imap <F4> <ESC>:bd<CR>
+
+"------------------------------------------------------------------------------
+" 键盘映射
+
+" b : 运行 bash
+"nmap <Leader>b :!bash<CR>
+"nmap <Leader>b :ConqueTerm bash<CR>
+nmap <Leader>b :ConqueTermSplit bash<CR>
+
+" q : 放弃修改，退出 vim
+nmap <Leader>q :qa!<CR>
+
+" s : 加载 vimrc
+nmap <Leader>s :source $HOME/.vimrc<CR>
+" t : 显示 taglsit
+nmap <Leader>t :Tlist<CR>
+
+" v : 编辑 .vimrc
+nmap <Leader>v :e $HOME/.vimrc<CR>
+" w : 切换窗口
+nmap <Leader>w <C-W><C-W>
+
+"------------------------------------------------------------------------------
+" 键盘映射
+
+" tabular
+"nmap <Leader>a& :Tabularize /&<CR>
+"vmap <Leader>a& :Tabularize /&<CR>
+"nmap <Leader>a= :Tabularize /=<CR>
+"vmap <Leader>a= :Tabularize /=<CR>
+"nmap <Leader>a: :Tabularize /:<CR>
+"vmap <Leader>a: :Tabularize /:<CR>
+"nmap <Leader>a:: :Tabularize /:\zs<CR>
+"vmap <Leader>a:: :Tabularize /:\zs<CR>
+"nmap <Leader>a, :Tabularize /,<CR>
+"vmap <Leader>a, :Tabularize /,<CR>
+"nmap <Leader>a,, :Tabularize /,\zs<CR>
+"vmap <Leader>a,, :Tabularize /,\zs<CR>
+"nmap <Leader>a<Bar> :Tabularize /<Bar><CR>
+"vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
+"nmap <Leader>a<Space> :Tabularize /<Space><CR>
+"vmap <Leader>a<Space> :Tabularize /<Space><CR>
+
+"------------------------------------------------------------------------------
+" 键盘映射
+
+" quick fix window
 nmap <Leader>co :co<CR>
 nmap <Leader>cc :ccl<CR>
 nmap <Leader>cn :cn<CR>
 nmap <Leader>cp :cp<CR>
 
-nmap <F2> :Lexplore<CR>
-nmap <F3> :bn<CR>
-nmap <F4> :bd<CR>
-nmap <F11> :!date<CR>
-nmap <F12> :Tlist<CR>
 
-"--------------------------------------------------------
-" 使更新 _vimrc 更容易
-nmap <Leader>s :source $HOME/.vimrc<CR>
-nmap <Leader>v :e $HOME/.vimrc<CR>
-
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 " TagList
 
 " Tlist_GainFocus_On_ToggleOpen :
@@ -193,14 +247,17 @@ let Tlist_Show_One_File=1
 
 let tlist_php_settings = 'php;c:class;i:interfaces;d:constant;f:function'
 
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
+" TagList
+
+"------------------------------------------------------------------------------
 " matchi
 " 忽略大小写
 let b:match_ignorecase = 1
 "let b:match_words='\<begin\>:\<end\>'
 
 
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 " Remove trailing whitespace in vim before saving
 " 对于新建文件，可能需要重新打开才能识别文件类型(:e)
 "autocmd FileType c,cpp,python,ruby,java,sh,html,javascript,php autocmd BufWritePre <buffer> :%s/\s\+$//e
@@ -208,7 +265,7 @@ let b:match_ignorecase = 1
 autocmd BufWritePre * :%s/\s\+$//e
 "autocmd BufWritePre *.php :%s/\s\+$//e
 
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 " DoxygenToolkit
 let g:DoxygenToolkit_commentType = "php"
 let g:DoxygenToolkit_authorName="coolbaby"
@@ -222,12 +279,11 @@ let g:doxygen_enhanced_color=1
 let g:DoxygenToolkit_briefTag_pre="@desc function  "
 let g:DoxygenToolkit_paramTag_pre="@params [type] "
 let g:DoxygenToolkit_returnTag="@return "
-let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
 let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
 "let g:DoxygenToolkit_authorName="Mathias Lorente"
 "let g:DoxygenToolkit_licenseTag="My own license"
 
-"--------------------------------------------------------
+"------------------------------------------------------------------------------
 " Syntastic
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
