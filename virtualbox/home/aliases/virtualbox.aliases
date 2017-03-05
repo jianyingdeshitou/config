@@ -14,6 +14,7 @@ alias vmctl='vbm controlvm'
 
 alias vmcfg='vbm modifyvm'
 alias vmcfg-aud='~/bin/modifyvm-audio.sh'
+alias vmcfg-cpus='~/bin/modifyvm-cpus.sh'
 alias vmcfg-usb='~/bin/modifyvm-usb.sh'
 alias vmcfg-mem='~/bin/modifyvm-mem.sh'
 alias vmcfg-br1='~/bin/modifyvm-nic1-bridged.sh'
