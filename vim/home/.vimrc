@@ -23,9 +23,14 @@ set autoread
 set nobackup
 set noswapfile
 
+" 自动切换目录
+set autochdir
+set tags=tags;
+
 "------------------------------------------------------------------------------
 " 设置行号显示
 set nu
+"set mouse=a
 
 "------------------------------------------------------------------------------
 " 设置tab长度为4
@@ -101,6 +106,16 @@ imap <F4> <ESC>:bd<CR>
 
 "------------------------------------------------------------------------------
 " 键盘映射
+" 括号自动补全
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {}<ESC>i
+inoremap < <><ESC>i
+inoremap ' ''<ESC>i
+inoremap " ""<ESC>i
+
+"------------------------------------------------------------------------------
+" 键盘映射
 
 " b : 运行 bash
 "nmap <Leader>b :!bash<CR>
@@ -124,6 +139,7 @@ nmap <Leader>w <C-W><C-W>
 " 键盘映射
 
 " tabular
+nmap <Leader>a1 :Tabularize /(/l0r0<CR>:Tabularize /)/l0r0<CR>:Tabularize /,\zs<CR>
 "nmap <Leader>a& :Tabularize /&<CR>
 "vmap <Leader>a& :Tabularize /&<CR>
 "nmap <Leader>a= :Tabularize /=<CR>
@@ -134,13 +150,17 @@ nmap <Leader>w <C-W><C-W>
 "vmap <Leader>a:: :Tabularize /:\zs<CR>
 "nmap <Leader>a, :Tabularize /,<CR>
 "vmap <Leader>a, :Tabularize /,<CR>
-"nmap <Leader>a,, :Tabularize /,\zs<CR>
+nmap<Leader>a,, :Tabularize /,\zs<CR>
 "vmap <Leader>a,, :Tabularize /,\zs<CR>
-"nmap <Leader>a<Bar> :Tabularize /<Bar><CR>
+nmap <Leader>a<Bar> :Tabularize /<Bar><CR>
 "vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
 "nmap <Leader>a<Space> :Tabularize /<Space><CR>
 "vmap <Leader>a<Space> :Tabularize /<Space><CR>
 
+" 自动缩进
+nmap <Leader>f1 gg=G<CR>
+" 删除行首数字
+nmap <Leader>f2 :%s#^\s*\d\+##g<CR>
 "------------------------------------------------------------------------------
 " 键盘映射
 
