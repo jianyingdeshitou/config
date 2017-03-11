@@ -3,6 +3,7 @@ alias gitcl='git clone'
 alias gits='git status'
 alias gitaa='git add .'
 alias gitcm='git commit'
+alias gitcma='git commit --amend'
 alias gitps='git push'
 alias gitpl='git pull'
 
@@ -45,6 +46,6 @@ alias gitfl-rf='gitfl release finish'
 
 alias gitfl-hs='gitfl hotfix start'
 alias gitfl-hf='gitfl hotfix finish'
- 
+
 alias gitlg='git log --graph --oneline --decorate --all'
 
