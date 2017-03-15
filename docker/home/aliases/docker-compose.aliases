@@ -13,3 +13,7 @@ alias dcps='dcp ps'
 
 alias dcrm='dcp rm'
 
+alias dcec='dcp exec'
+
+alias dcrs='dcp restart'
+
