@@ -64,8 +64,8 @@ let base16colorspace=256
 set background=dark
 colorscheme desert
 "colorscheme molokai
-"colorscheme calmar256-dark
-colorscheme xoria256
+colorscheme calmar256-dark
+"colorscheme xoria256
 
 " 自动缩进
 set autoindent
@@ -171,7 +171,7 @@ let g:ctrlp_working_path_mode = 'r'
 " DoxygenToolkit
 "------------------------------------------------------------------------------
 let g:DoxygenToolkit_commentType = "php"
-let g:DoxygenToolkit_authorName="coolbaby"
+let g:DoxygenToolkit_authorName="坚硬的石头"
 let s:licenseTag = "Copyright(C)\<enter>"
 let s:licenseTag = s:licenseTag . "For free\<enter>"
 let s:licenseTag = s:licenseTag . "All right reserved\<enter>"
@@ -339,12 +339,13 @@ imap <F4> <ESC>:bd<CR>
 "------------------------------------------------------------------------------
 " 键盘映射 : <Leader>
 "------------------------------------------------------------------------------
-let mapleader = "\<Space>"
+"let mapleader = "\<Space>"
 
 nnoremap <CR> G
 nnoremap <BS> gg
 
-noremap <Leader>a `[v`]
+"noremap <Leader>a `[v`]
+noremap <Leader>a :DoxAuthor<CR>
 
 " b : 缓冲区列表
 nnoremap <Leader>b :ls<CR>
@@ -382,7 +383,6 @@ nnoremap <Leader>v :e $HOME/.vimrc<CR>
 
 " w : 切换窗口
 nnoremap <Leader>w :w<CR>
-
 
 "------------------------------------------------------------------------------
 " CtrlP
