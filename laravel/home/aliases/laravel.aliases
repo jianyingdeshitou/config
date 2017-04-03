@@ -1,0 +1,4 @@
+
+alias ats='php artisan'
+alias ats-ns='ats app:name'
+
