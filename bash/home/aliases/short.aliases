@@ -2,7 +2,7 @@
 #alias b=''
 alias c='cat'
 #alias d=''
-#alias e=''
+alias e='exit'
 #alias f=''
 alias g='grep -i'
 alias h='head'
