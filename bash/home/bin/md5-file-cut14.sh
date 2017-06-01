@@ -1,2 +1,2 @@
 #!/bin/bash
-md5 -q $1 |cut -b1-14
+echo $1 | md5 |cut -b1-14
