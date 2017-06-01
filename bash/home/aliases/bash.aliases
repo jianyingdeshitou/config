@@ -1,4 +1,6 @@
-alias cmax='chmod +x'
+alias ..='cd ..'
+
+alias cmax='chmod a+x'
 
 alias cpr='cp -R'
 alias cpa='cp -a'

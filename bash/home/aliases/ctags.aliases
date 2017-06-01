@@ -1,0 +1,4 @@
+#!/bin/bash
+alias tgs-php='ctags -R --fields=+aimS --languages=php'
+alias tgs-js='ctags -R --fields=+aimS --languages=javascript'
+
