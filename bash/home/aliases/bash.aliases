@@ -6,6 +6,7 @@ alias cpr='cp -R'
 alias cpa='cp -a'
 
 alias df='df -h'
+alias dfd='diff -ruNaq'
 alias du='du -h'
 
 alias ffn='~/bin/find-filename-in-subdir.sh'

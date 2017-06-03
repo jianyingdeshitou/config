@@ -26,6 +26,10 @@ alias gitcfg-editor='gitcfg core.editor'
 alias gitcfg-crlf='~/bin/git-crlf.sh'
 alias gitcfg-utf8='~/bin/git-utf8.sh'
 alias gitcfg-list='gitcfg -l'
+alias gitcfg-filemode='gitcfg core.fileMode'
+
+alias gitcfl='git config'
+alias gitcfl-filemode='gitcfl core.fileMode'
 
 alias gitrr='git remote rm'
 alias gitra='git remote add'
