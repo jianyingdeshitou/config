@@ -1,1 +1,5 @@
+alias ls='ls -Gh'
+alias ll='ls -Ghl'
+alias la='ls -Ghla'
+
 alias m14='~/bin/md5-file-cut14.sh'
