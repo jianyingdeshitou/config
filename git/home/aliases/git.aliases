@@ -1,4 +1,5 @@
 alias gitcl='git clone'
+alias gitdf='git diff'
 
 alias gits='git status'
 alias gitaa='git add .'
