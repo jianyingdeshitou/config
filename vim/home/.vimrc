@@ -16,6 +16,8 @@ filetype plugin on
 " 检查文件类型
 filetype on
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
 
 " 让配置变更立即生效
 "autocmd BufWritePost $MYVIMRC source $MYVIMRC
@@ -359,7 +361,8 @@ nnoremap <Leader>b :ls<CR>
 nnoremap <Leader>d :bd<CR>
 
 " e : 文件浏览器
-nnoremap <Leader>e :Texplore<CR>
+"nnoremap <Leader>e :Texplore<CR>
+nnoremap <Leader>e :NERDTreeToggle<CR>
 
 nnoremap <Leader>n :bn<CR>
 
@@ -419,6 +422,8 @@ nnoremap <Leader>a? :Tabularize /?<CR>
 nnoremap <Leader>f1 gg=G<CR>``
 " 删除行首数字
 nnoremap <Leader>f2 :%s#^\s*\d\+##g<CR>
+" 参数逗号对齐
+nnoremap <Leader>f3 :Tabularize /,/l0r1<CR>
 
 "------------------------------------------------------------------------------
 " 键盘映射 : 其他
