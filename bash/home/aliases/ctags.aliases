@@ -1,4 +1,4 @@
 #!/bin/bash
-alias tgs-php='ctags -R --fields=+aimS --languages=php'
+alias tgs-php='ctags -R --fields=+aimS --languages=php --PHP-kinds=+cf --regex-php="/^[ \t]*trait[ \t]+([a-z0_9_]+)/\1/t,traits/i"'
 alias tgs-js='ctags -R --fields=+aimS --languages=javascript'
 
