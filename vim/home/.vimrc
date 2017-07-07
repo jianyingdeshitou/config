@@ -167,7 +167,15 @@ let g:ctrlp_custom_ignore = {
 " Use the nearest .git directory as the cwd
 " This makes a lot of sense if you are working on a project that is in version
 " control. It also supports works with .svn, .hg, .bzr.
-let g:ctrlp_working_path_mode = 'r'
+"let g:ctrlp_working_path_mode = 'r'
+let g:ctrlp_working_path_mode = 'w'
+
+"let g:ctrlp_working_path_mode=0
+let g:ctrlp_match_window_bottom=1
+let g:ctrlp_max_height=15
+let g:ctrlp_match_window_reversed=0
+let g:ctrlp_mruf_max=500
+let g:ctrlp_follow_symlinks=1
 
 "------------------------------------------------------------------------------
 " DoxygenToolkit
@@ -326,17 +334,17 @@ let tlist_php_settings = 'php;c:class;i:interfaces;d:constant;f:function'
 "------------------------------------------------------------------------------
 
 " F2 : 文件浏览器
-nnoremap <F2> :enew<CR>
+"nnoremap <F2> :enew<CR>
 "nnoremap <F2> :tabnew<CR>
 " F3 : 切换缓冲区文件
-nnoremap <F3> :bnext<CR>
+"nnoremap <F3> :bnext<CR>
 "nnoremap <F3> :tabnext<CR>
 "nnoremap <F3> <Plug>AirlineSelectNextTab
 " F4 : 删除缓冲区文件
 "nnoremap <F4> :q<CR>
-nnoremap <F4> :bd<CR>
+"nnoremap <F4> :bd<CR>
 "nnoremap <S-F4> :q<CR>
-imap <F4> <ESC>:bd<CR>
+"imap <F4> <ESC>:bd<CR>
 
 "------------------------------------------------------------------------------
 " 键盘映射 : <Leader>
@@ -345,6 +353,8 @@ imap <F4> <ESC>:bd<CR>
 
 nnoremap <CR> G
 nnoremap <BS> gg
+
+nnoremap <Leader><Tab> :bnext<CR>
 
 "noremap <Leader>a `[v`]
 noremap <Leader>a :DoxAuthor<CR>
@@ -364,11 +374,11 @@ nnoremap <Leader>d :bd<CR>
 "nnoremap <Leader>e :Texplore<CR>
 nnoremap <Leader>e :NERDTreeToggle<CR>
 
-nnoremap <Leader>n :bn<CR>
+nnoremap <Leader>n :enew<CR>
 
 " Use a leader instead of the actual named binding
-nnoremap <leader>o :CtrlP<cr>
-"nnoremap <leader>p :CtrlP<cr>
+"nnoremap <leader>o :CtrlP<cr>
+nnoremap <leader>p :CtrlP<cr>
 
 " q : 放弃修改，退出 vim
 nnoremap <Leader>q :q<CR>
@@ -379,7 +389,7 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>s :ConqueTermSplit bash<CR>
 
 " t : 显示 taglsit
-nnoremap <Leader>t :Tlist<CR>
+nnoremap <Leader>t :Tlist<CR><C-W><C-W>
 
 " v : 编辑 .vimrc
 nnoremap <Leader>v :e $HOME/.vimrc<CR>
