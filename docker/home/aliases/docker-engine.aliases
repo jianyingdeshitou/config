@@ -28,7 +28,6 @@ alias dkshc='~/bin/exe-bash-in-container.sh'
 alias dpb='~/bin/dev-php7-bash.sh'
 alias vim='~/bin/dev-php7-vim.sh'
 
-alias artisan='~/bin/dev-php7-artisan.sh'
 alias composer='~/bin/dev-php7-composer.sh'
 alias php='~/bin/dev-php7-php.sh'
 
