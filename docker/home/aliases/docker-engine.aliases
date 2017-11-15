@@ -23,3 +23,18 @@ alias dkv-rma='dkv rm $(docker volume ls -qf dangling=true)'
 alias dkshi='~/bin/run-bash-on-image.sh'
 alias dkshc='~/bin/exe-bash-in-container.sh'
 
+#-------------------
+
+alias dpb='~/bin/dev-php7-bash.sh'
+alias vim='~/bin/dev-php7-vim.sh'
+
+alias artisan='~/bin/dev-php7-artisan.sh'
+alias composer='~/bin/dev-php7-composer.sh'
+alias php='~/bin/dev-php7-php.sh'
+
+alias nl51='~/bin/new-laravel-5.1.sh'
+alias nl52='~/bin/new-laravel-5.2.sh'
+alias nl53='~/bin/new-laravel-5.3.sh'
+alias nl54='~/bin/new-laravel-5.4.sh'
+alias nl55='~/bin/new-laravel-5.5.sh'
+
