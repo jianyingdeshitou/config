@@ -1,6 +1,6 @@
 
 alias dpb='~/bin/dev-php7-bash.sh'
-alias vim='~/bin/app-vim.sh'
+alias vim='~/bin/app-vim8.sh'
 
 alias composer='~/bin/app-composer.sh'
 alias php='~/bin/app-php7.sh'
