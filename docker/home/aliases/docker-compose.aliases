@@ -1,4 +1,4 @@
-#!/bin/sh
+
 alias dcp='docker-compose'
 
 alias dcup='dcp up -d'

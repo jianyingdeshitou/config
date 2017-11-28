@@ -1,9 +1,15 @@
-#!/bin/sh
+
 alias dpb='~/bin/dev-php7-bash.sh'
 alias vim='~/bin/app-vim.sh'
 
 alias composer='~/bin/app-composer.sh'
 alias php='~/bin/app-php7.sh'
+
+alias node='~/bin/app-node8.sh'
+alias npm='~/bin/app-npm5.sh'
+alias gulp='~/bin/app-gulp.sh'
+alias webpack='~/bin/app-webpack.sh'
+alias bower='~/bin/app-bower.sh'
 
 alias nl51='~/bin/new-laravel-5.1.sh'
 alias nl52='~/bin/new-laravel-5.2.sh'
