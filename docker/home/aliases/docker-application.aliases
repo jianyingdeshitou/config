@@ -1,0 +1,12 @@
+#!/bin/sh
+alias dpb='~/bin/dev-php7-bash.sh'
+alias vim='~/bin/app-vim.sh'
+
+alias composer='~/bin/app-composer.sh'
+alias php='~/bin/app-php7.sh'
+
+alias nl51='~/bin/new-laravel-5.1.sh'
+alias nl52='~/bin/new-laravel-5.2.sh'
+alias nl53='~/bin/new-laravel-5.3.sh'
+alias nl54='~/bin/new-laravel-5.4.sh'
+alias nl55='~/bin/new-laravel-5.5.sh'
