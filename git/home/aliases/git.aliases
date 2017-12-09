@@ -68,4 +68,5 @@ alias gitfl-hs='gitfl hotfix start'
 alias gitfl-hf='gitfl hotfix finish'
 
 alias gitlg='git log --graph --oneline --decorate --all'
+alias gitlgf='git log --pretty=format:"%h - %an, %ad : %s"'
 
