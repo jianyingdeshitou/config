@@ -7,6 +7,7 @@ alias dkrmi='docker rmi'
 
 alias dklg='dk logs'
 
+alias dks='docker stats --no-stream $(docker ps --format={{.Names}})'
 alias dkls='docker ps -a'
 alias dkps='docker ps'
 

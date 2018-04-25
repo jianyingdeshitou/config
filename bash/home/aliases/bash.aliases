@@ -12,6 +12,7 @@ alias du='du -h'
 alias ffn='~/bin/find-filename-in-subdir.sh'
 
 alias psa='ps aux'
+alias psg='ps aux|g '
 
 alias rd='rm -rf'
 
