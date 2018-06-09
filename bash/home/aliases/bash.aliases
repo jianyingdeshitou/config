@@ -19,3 +19,4 @@ alias rd='rm -rf'
 alias tgz='~/bin/tgz.sh'
 alias tgzx='tar -xvpzf'
 
+alias d2u='~/bin/dos2unix.sh'
