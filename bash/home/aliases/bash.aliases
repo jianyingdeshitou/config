@@ -9,6 +9,7 @@ alias df='df -h'
 alias dfd='diff -ruNaq'
 alias du='du -h'
 
+alias fef='find . -empty'
 alias ffn='~/bin/find-filename-in-subdir.sh'
 alias ffr='~/bin/remove-find-filename.sh'
 
