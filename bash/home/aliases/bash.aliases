@@ -10,6 +10,7 @@ alias dfd='diff -ruNaq'
 alias du='du -h'
 
 alias ffn='~/bin/find-filename-in-subdir.sh'
+alias ffr='~/bin/remove-find-filename.sh'
 
 alias psa='ps aux'
 alias psg='ps aux|g '
