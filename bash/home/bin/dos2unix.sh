@@ -1,2 +1,2 @@
 #!/bin/sh
-find . -name $1 -type f -exec dos2unix {} \;
+find . -name "$1" -type f -exec dos2unix {} \;
