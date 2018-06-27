@@ -2,6 +2,8 @@ alias ..='cd ..'
 
 alias cmax='chmod a+x'
 
+alias cor='chown -R'
+
 alias cpr='cp -R'
 alias cpa='cp -a'
 
