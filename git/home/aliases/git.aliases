@@ -1,7 +1,7 @@
 alias gitcl='git clone'
 
 alias gitbr='git branch'
-alias gitbra='gitbr -a'
+alias gitbra='gitbr -av'
 
 alias gitco='git checkout'
 alias gitcob='gitco -b'
