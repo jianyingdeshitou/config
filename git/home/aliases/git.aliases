@@ -23,8 +23,10 @@ alias gitdf='git diff'
 alias gitps='git push'
 alias gitpl='git pull'
 
-alias gitpsa='~/bin/git-push-all-tags.sh'
+alias gitpsa='gitps --all'
 alias gitpsao='gitpsa origin'
+alias gitpst='gitps --tags'
+alias gitpsto='gitpst origin'
 
 alias gitpso='gitps origin'
 alias gitplo='gitpl origin'
