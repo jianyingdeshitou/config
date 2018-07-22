@@ -25,4 +25,6 @@ alias dkv-rm='dkv rm'
 alias dkv-rma='dkv rm $(docker volume ls -qf dangling=true)'
 
 alias dkshi='~/bin/run-bash-on-image.sh'
+alias dkshiw='~/bin/run-bash-on-image-with-workdir.sh'
 alias dkshc='~/bin/exe-bash-in-container.sh'
+alias dkshcw='~/bin/exe-bash-in-container-with-workdir.sh'
