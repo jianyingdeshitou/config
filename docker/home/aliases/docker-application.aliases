@@ -1,17 +1,14 @@
 
-alias dpb='~/bin/dev-php7-bash.sh'
 alias git='~/bin/app-git.sh'
 alias vim='~/bin/app-vim8.sh'
 
-alias composer='~/bin/app-composer.sh'
-alias php='~/bin/app-php7.sh'
+alias php53='~/bin/run-bash-on-image-with-workdir.sh php5-c6'
+alias php54='~/bin/run-bash-on-image-with-workdir.sh php5-d7'
+alias php56='~/bin/run-bash-on-image-with-workdir.sh php5-d8'
+alias php70='~/bin/run-bash-on-image-with-workdir.sh php7-d9'
+alias php71='~/bin/run-bash-on-image-with-workdir.sh php71-d9'
 
-alias node='~/bin/app-node8.sh'
-alias npm='~/bin/app-npm5.sh'
-alias gulp='~/bin/app-gulp.sh'
-alias webpack='~/bin/app-webpack.sh'
-alias bower='~/bin/app-bower.sh'
-alias yarn='~/bin/app-yarn.sh'
+alias node8='~/bin/run-bash-on-image-with-workdir.sh nodejs-d9'
 
 alias nl51='~/bin/new-laravel-5.1.sh'
 alias nl52='~/bin/new-laravel-5.2.sh'
