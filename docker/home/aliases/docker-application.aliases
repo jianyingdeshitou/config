@@ -1,6 +1,6 @@
 
-alias git='~/bin/app-git.sh'
-alias vim='~/bin/app-vim8.sh'
+#alias git='~/bin/app-git.sh'
+#alias vim='~/bin/app-vim8.sh'
 
 alias php53='~/bin/run-bash-on-image-with-workdir.sh php5-c6'
 alias php54='~/bin/run-bash-on-image-with-workdir.sh php5-d7'
