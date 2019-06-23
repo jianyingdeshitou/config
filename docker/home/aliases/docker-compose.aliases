@@ -1,8 +1,11 @@
 
 alias dcp='docker-compose'
 
+alias dcf='docker-compose -f '
 alias dcfu='~/bin/docker-compose-f-up.sh '
+alias dcfub='~/bin/docker-compose-f-up-build.sh '
 alias dcfd='~/bin/docker-compose-f-down.sh '
+alias dcfr='~/bin/docker-compose-f-restart.sh '
 
 alias dcup='dcp up -d'
 alias dcdw='dcp down'
